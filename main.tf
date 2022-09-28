@@ -7,7 +7,7 @@ provider "aws" {
 #module "ec2-instance" {
 #  source  = "terraform-aws-modules/ec2-instance/aws"
 #  version = "4.1.4"
-resorce "aws_instance" "ec2" {
+resource "aws_instance" "ec2" {
   ami                    = "ami-0f62d9254ca98e1aa"
   #name                   = "aswin-instance"
   instance_type          = "t2.micro"
