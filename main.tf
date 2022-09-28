@@ -14,4 +14,7 @@ resource "aws_instance" "ec2" {
   subnet_id              = "subnet-0c090f69daf43d845"
   key_name               = "qb-aws-singapore"
   vpc_security_group_ids = ["sg-0e45e2c8192a95a95"]
+  tags = {
+    Name = "aswin"
+  }
 }
